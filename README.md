@@ -37,10 +37,10 @@ Master Node
     └── Other components (e.g., monitoring or logging tools)
 ```
 
-##What is ETCD ? 
+## What is ETCD ? 
 etcd : is the central source of truth in Kubernetes, storing all configuration and state information for the cluster.
 
-###Basic Example:
+### Basic Example:
 When you create a new pod or service in Kubernetes, the kube-apiserver stores that information in etcd. For example:
 
 You create a new Pod.
