@@ -1,4 +1,4 @@
-## Kubernetes Architecture
+![image](https://github.com/user-attachments/assets/d97e64eb-c7cf-436d-9e7f-6be067c88438)## Kubernetes Architecture
 
 ```scss
 // Kubernetes Master Node Architecture
@@ -7,7 +7,6 @@ Master Node
 ├── kube-apiserver
 ├── kube-scheduler
 ├── kube-controller-manager
-├── cloud-controller-manager (if using cloud provider integration)
 └── Add-ons
     ├── CoreDNS
     ├── kube-proxy
@@ -32,9 +31,21 @@ Master Node
 ├── kube-apiserver
 ├── kube-scheduler
 ├── kube-controller-manager
-├── cloud-controller-manager (if using cloud provider integration)
 └── Add-ons
     ├── CoreDNS
     ├── kube-proxy
     └── Other components (e.g., monitoring or logging tools)
 ```
+
+##What is ETCD ? 
+etcd : is the central source of truth in Kubernetes, storing all configuration and state information for the cluster.
+
+###Basic Example:
+When you create a new pod or service in Kubernetes, the kube-apiserver stores that information in etcd. For example:
+
+You create a new Pod.
+The kube-apiserver writes the desired state of that Pod to etcd.
+Other components, like the kube-scheduler, read from etcd to determine where to schedule the Pod.
+
+
+
