@@ -20,6 +20,8 @@ Worker Node
 └── Container Runtime (Docker, containerd, etc.)
 
 ```
+![Uploading k1.png…]()
+
 
 
 ## Kubernetes Master Node Architecture
