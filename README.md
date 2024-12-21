@@ -20,7 +20,7 @@ Worker Node
 └── Container Runtime (Docker, containerd, etc.)
 
 ```
-![Uploading k1.png…]()
+![k1](https://github.com/user-attachments/assets/01eec61f-e5af-467a-85b7-696bef67b78e)
 
 
 
