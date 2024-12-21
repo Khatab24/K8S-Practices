@@ -54,10 +54,10 @@ It ensures that the desired state of the cluster is maintained and makes it acce
 
 ## 3-kube-controller-manager
 is one of the core components of the Kubernetes control plane responsible for maintaining the desired state of the cluster by running controller processes. Each controller watches for changes to specific resources in the cluster (like Pods, Deployments, Nodes, etc.) and takes actions to ensure that the cluster's current state matches the desired state.
-## How the kube-controller-manager Works:
-# Cluster State Check: The controller-manager continually monitors the current state of the cluster by reading information from the API server and etcd.
-# Desired State: Based on the configuration of the resources (e.g., Deployments, ReplicaSets), the controller-manager knows the desired state of each resource.
-# Reconciliation: If the actual state diverges from the desired state, the appropriate controller takes action to bring the system back to the desired state. This is known as reconciliation.
+### How the kube-controller-manager Works:
+##### Cluster State Check: The controller-manager continually monitors the current state of the cluster by reading information from the API server and etcd.
+##### Desired State: Based on the configuration of the resources (e.g., Deployments, ReplicaSets), the controller-manager knows the desired state of each resource.
+##### Reconciliation: If the actual state diverges from the desired state, the appropriate controller takes action to bring the system back to the desired state. This is known as reconciliation.
 ![image](https://github.com/user-attachments/assets/9b743bba-2f90-4434-9975-fef45571d342)
 
 ## 4-kube-scheduler 
