@@ -19,7 +19,7 @@ Worker Node
 ├── kube-proxy
 └── Container Runtime (Docker, containerd, etc.)
 
-
+```
 
 
 ## Kubernetes Master Node Architecture
@@ -35,3 +35,4 @@ Master Node
     ├── CoreDNS
     ├── kube-proxy
     └── Other components (e.g., monitoring or logging tools)
+```
