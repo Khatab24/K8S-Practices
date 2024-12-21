@@ -46,7 +46,7 @@ When you create a new pod or service in Kubernetes, the kube-apiserver stores th
 You create a new Pod.
 The kube-apiserver writes the desired state of that Pod to etcd.
 Other components, like the kube-scheduler, read from etcd to determine where to schedule the Pod.
-![image](https://github.com/user-attachments/assets/d97e64eb-c7cf-436d-9e7f-6be067c88438)
+![k2](https://github.com/user-attachments/assets/4998c55b-82fb-42c5-b578-af310cd8ce14)
 
 
 
