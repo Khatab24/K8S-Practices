@@ -13,8 +13,8 @@ Value: Optional descriptor for the taint.
     NoExecute: Evicts existing Pods without matching tolerations and prevents new ones from being scheduled.
 
     ```scss
-    kubectl taint nodes gpu-node special=true:NoSchedule
-```
+    kubectl taint nodes gpu-node special=true:NoSchedule ```
+
 
 #### A toleration includes:
 
@@ -38,13 +38,13 @@ kubectl label nodes node-01 disktype=ssd
 ## 4-node affinity
 is a feature that allows you to control which nodes your Pods are eligible to be scheduled on, based on node labels. It provides more expressive and flexible placement constraints compared to the simpler nodeSelector
 
-##### Types of Node Affinity:
+# Types of Node Affinity:
 
-###      Required During Scheduling, Ignored During Execution (requiredDuringSchedulingIgnoredDuringExecution):
+#      Required During Scheduling, Ignored During Execution (requiredDuringSchedulingIgnoredDuringExecution):
 
 Behavior: Specifies rules that must be met for a Pod to be scheduled onto a node. If no available nodes satisfy these rules, the Pod will not be scheduled. Once the Pod is running, changes to node labels that violate these rules do not affect the Pod.
 
-###     Preferred During Scheduling, Ignored During Execution (preferredDuringSchedulingIgnoredDuringExecution):
+#     Preferred During Scheduling, Ignored During Execution (preferredDuringSchedulingIgnoredDuringExecution):
 
 Behavior: Indicates a preference for scheduling the Pod onto nodes that meet certain criteria. The scheduler will try to place the Pod on a preferred node, but if none are available, it will schedule the Pod on a non-preferred node. As with the required type, changes to node labels after scheduling do not impact the Pod.
 
