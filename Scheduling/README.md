@@ -12,7 +12,7 @@ NoSchedule: Prevents Pods without matching tolerations from being scheduled on t
 PreferNoSchedule: Prefers not to schedule Pods without matching tolerations on the Node but doesn't enforce it strictly.
 NoExecute: Evicts existing Pods without matching tolerations and prevents new ones from being scheduled.
 
-    ```scss
+    ```
     kubectl taint nodes gpu-node special=true:NoSchedule ```
 
 
@@ -24,7 +24,7 @@ Value: Matches the taint's value.
 Effect: Matches the taint's effect.
 
 ##### What is taint and toleration 
-[text](https://youtu.be/yFmgW3qoaFY)
+(https://youtu.be/yFmgW3qoaFY)
 
 ## 3-Node Selectors
 is a simple mechanism that allows you to constrain Pods to run only on Nodes with specific labels. By specifying a nodeSelector field in a Pod's specification, you can ensure that the Pod is scheduled only onto Nodes that match the defined key-value pair labels. 
