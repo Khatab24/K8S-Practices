@@ -8,9 +8,9 @@ work together to control how Pods are scheduled onto Nodes, ensuring that certai
 Key: Identifier for the taint.
 Value: Optional descriptor for the taint.
   ##### Effect: Determines the taint's impact on Pod scheduling, which can be:
-    NoSchedule: Prevents Pods without matching tolerations from being scheduled on the Node.
-    PreferNoSchedule: Prefers not to schedule Pods without matching tolerations on the Node but doesn't enforce it strictly.
-    NoExecute: Evicts existing Pods without matching tolerations and prevents new ones from being scheduled.
+NoSchedule: Prevents Pods without matching tolerations from being scheduled on the Node.
+PreferNoSchedule: Prefers not to schedule Pods without matching tolerations on the Node but doesn't enforce it strictly.
+NoExecute: Evicts existing Pods without matching tolerations and prevents new ones from being scheduled.
 
     ```scss
     kubectl taint nodes gpu-node special=true:NoSchedule ```
