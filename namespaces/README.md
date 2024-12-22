@@ -6,3 +6,6 @@ is a mechanism for isolating and organizing groups of resources within a single 
 ## Namespaces in Kubernetes
 https://www.youtube.com/watch?v=plB3kyZLHe8&t=2s
 
+## ResourceQuota
+is an object that imposes constraints on the total resource consumption within a specific namespace.
+![image](https://github.com/user-attachments/assets/9e2cb82e-adae-47e0-acca-dd1f9cc8f3db)
