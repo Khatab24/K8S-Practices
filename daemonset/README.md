@@ -6,5 +6,8 @@ Logging: Deploying logging agents (like Fluentd or Logstash) on every node to co
 Monitoring: Running monitoring tools (like Prometheus Node Exporter) on every node to gather metrics.
 Networking: Running network proxies or other system-level services on every node.
 Backup/Restore: Running backup or restore processes on every node to ensure data integrity.
+![image](https://github.com/user-attachments/assets/64b44b7d-14be-4aa9-aae3-c63e7f6cc305)
 
 docs link https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
+
+
